@@ -22,7 +22,8 @@ Considerandos os estágios:
 OBS: 
 * Conflito de dados no 3 e 4 resolvido com adiantamento de dados.
 * STALL em 5 e 7 devido a conflito de dados.
-* STALL em 6 devido a conflito de estrutura (impossivel executar BI e MEM no mesmo ciclo de clock)
-Com pipeline: 19ns
-Sem pipeline: 38ns
+* STALL em 6 devido a conflito de estrutura (impossivel executar BI e MEM no mesmo ciclo de clock)  
+
+Com pipeline: 19ns  
+Sem pipeline: 38ns  
 speedUP 38/19 = 2x mais rápida que a versão sem pipeline.
