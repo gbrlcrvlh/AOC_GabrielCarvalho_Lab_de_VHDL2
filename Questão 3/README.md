@@ -1,11 +1,11 @@
 ### Conflitos no pipeline
 
 Considerandos os estágios:
-* BI: Busca da Instrução.
-* DI: Decodificação da Instrução.
-* EX: Excecução da instrução.
-* MEM: Leitura/escrita na memória.
-* ER: escrita no registrador.
+* BI: Busca da Instrução. (2ns)
+* DI: Decodificação da Instrução. (1ns)
+* EX: Excecução da instrução. (2ns)
+* MEM: Leitura/escrita na memória. (2ns)
+* ER: escrita no registrador. (1ns)
 
 |                      | CC1 | CC2 | CC3 | CC4 | CC5 | CC6 | CC7 | CC8 | CC9 | CC10|
 |----------------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
@@ -23,3 +23,7 @@ OBS:
 * Conflito de dados no 3 e 4 resolvido com adiantamento de dados.
 * STALL em 5 e 7 devido a conflito de dados.
 * STALL em 6 devido a conflito de estrutura (impossivel executar BI e MEM no mesmo ciclo de clock)
+
+Com pipeline: 19ns
+Sem pipeline: 38ns
+speedUP 38/19 = 2x mais rápida que a versão sem pipeline.
