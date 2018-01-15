@@ -2,7 +2,7 @@
 
 No uniciclo:
 * Vantagens:
- * Cada instrução é executada em exatamente um ciclo de clock.
+        * Cada instrução é executada em exatamente um ciclo de clock.
 * Desvantagens:
  * Ciclo de clock determinado pela instrução de maior extensão no datapath. (LOAD)
  * Duplicação de componentes.
