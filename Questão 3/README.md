@@ -7,7 +7,7 @@ Considerandos os estágios:
 * MEM: Leitura/escrita na memória.
 * ER: escrita no registrador.
 
-|----------------------| CC1 | CC2 | CC3 | CC4 | CC5 | CC6 | CC7 | CC8 | CC9 |
+| | CC1 | CC2 | CC3 | CC4 | CC5 | CC6 | CC7 | CC8 | CC9 |
 |----------------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|
 |1. subi $t2, $t2, 4   |  BI |  DI |  EX | ER  |  -  |  -  |  -  |  -  |  -  |
 |2. lw   $t1, 0($t2)   |  -  |  BI |  DI | EX  | MEM | ER  |  -  |  -  |  -  |
